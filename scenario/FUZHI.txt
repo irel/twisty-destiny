@@ -1,0 +1,16 @@
+@erafterpage mode=true;
+[linemode mode=none]
+[eval exp="kag.autoLabelType = 0"]
+[wait time=200]
+*start|¥¹¥¿©`¥È
+
+ [position layer=message0 page=fore visible=false][backlay] 
+ [image layer=base page=back storage="bj3" visible=true left=0 top=0 opacity=255] 
+[trans method=crossfade time=500][wt] 
+
+[position layer=message0 page=back visible=true opacity=255 top=0 height=640 left=0 width=960 marginl=0 margint=0 marginr=0 marginb=0 frame="bj1"] 
+[current layer=message0 page=back][er] 
+[locate x=40 y=370][button normal="duqu2" over="shezhi2" storage="open.ks" target=*open] 
+[locate x=40 y=430][button normal="duqu2" over="shezhi2" exp="kag.onCloseQuery()"] 
+[trans method=crossfade time=800][wt] 
+
